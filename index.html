@@ -15,13 +15,16 @@ li { list-style: none; margin-bottom: 2px; padding: 5px; border-bottom: 1px soli
 <body>
 <div class='container'>
 <h1>Global Status</h1>
-<ul><li class='panel success-bg'>All Systems Operational</li></ul>
+<ul><li class='panel failed-bg'>       1 Outage(s)</li></ul>
 <h1>Services</h1>
 <ul>
+<li>Unavailable (debugging) <span class='small failed'>(connectx to rt3x.de port 1234 (tcp) failed: Operation timed out
+connectx to rt3x.de port 1234 (tcp) failed: Connection refused)</span><span class='status failed'>Disrupted</span></li>
 <li>rt3x.de ping <span class='status success'>Operational</span></li>
-<li>OpenSSH <span class='status success'>Operational</span></li>
+<li>Portainer <span class='status success'>Operational</span></li>
 <li>Flying Paste <span class='status success'>Operational</span></li>
 <li>startseite <span class='status success'>Operational</span></li>
+<li>OpenSSH <span class='status success'>Operational</span></li>
 <li>QOTD Service <span class='status success'>Operational</span></li>
 <li>Finger Service <span class='status success'>Operational</span></li>
 <li>malte70.de (IPv4) <span class='status success'>Operational</span></li>
@@ -29,9 +32,8 @@ li { list-style: none; margin-bottom: 2px; padding: 5px; border-bottom: 1px soli
 <li>malte70.de 404 <span class='status success'>Operational</span></li>
 <li>SearXNG <span class='status success'>Operational</span></li>
 <li>Gokapi <span class='status success'>Operational</span></li>
-<li>Portainer <span class='status success'>Operational</span></li>
 </ul>
-<p class=small> Last check: 2025-07-31T14:54:16+0200</p>
+<p class=small> Last check: 2025-07-31T15:24:04+0200</p>
 <h1>Incidents</h1>
 <p>No incident reported yet ;)</p>
 </div>
