@@ -1,6 +1,12 @@
-http,   200,  Google Website,         https://google.com
-http4,  200,  Google Website (IPv4),  https://google.com
-http6,  200,  Google Website (IPv6),  https://google.com
-http,   404,  Google 404,             https://google.com/dummy
-ping,   0,    Google ping,            8.8.8.8
-port,   0,    Google DNS,             8.8.8.8 53
+ping,   0,    rt3x.de ping,           rt3x.de
+port,   0,    OpenSSH,                rt3x.de 22
+port,   0,    QOTD Service,           bbs.malte70.de 17
+port,   0,    Finger Service,         bbs.malte70.de 79
+http4,  200,  malte70.de (IPv4),      https://malte70.de
+http6,  200,  malte70.de (IPv6),      https://malte70.de
+http,   404,  malte70.de 404,         https://malte70.de/404
+http,   200,  SearXNG,                https://searx.rt3x.de
+http,   200,  Gokapi,                 https://gokapi.rt3x.de
+http,   200,  Portainer,              https://portainer.rt3x.de
+http,   200,  Flying Paste,           https://nopaste.rt3x.de
+http,   200,  startseite,             https://startseite.malte70.de
