@@ -5,8 +5,10 @@ port,   0,    Finger Service,         bbs.malte70.de 79
 http4,  200,  malte70.de (IPv4),      https://malte70.de
 http6,  200,  malte70.de (IPv6),      https://malte70.de
 http,   404,  malte70.de 404,         https://malte70.de/404
-http,   200,  SearXNG,                https://searx.rt3x.de
-http,   200,  Gokapi,                 https://gokapi.rt3x.de
-http,   200,  Portainer,              https://portainer.rt3x.de
+http,   200,  [Docker] SearXNG,       https://searx.rt3x.de
+http,   200,  [Docker] Gokapi,        https://gokapi.rt3x.de
+http,   200,  [Docker] Portainer,     https://portainer.rt3x.de
+http,   200,  [Docker] DokuWiki,      https://wiki.rt3x.de
+http,   200,  [Docker] Healthchecks,  https://healthchecks.rt3x.de
 http,   200,  Flying Paste,           https://nopaste.rt3x.de
 http,   200,  startseite,             https://startseite.malte70.de
