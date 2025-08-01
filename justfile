@@ -1,3 +1,7 @@
+#!/usr/bin/env -S just --justfile
+# ^ A shebang isn't required, but allows a justfile to be executed
+#   like a script, with `./justfile test`, for example.
+#     Source: https://github.com/casey/just/blob/master/justfile
 # 
 #   _____________________________
 #  / justfile for malte70/status \
@@ -37,6 +41,10 @@ alias b := build
 
 # Upload using GitHub pages
 upload: build
+	@if [[ ! -s status.html ]]; then \
+		echo " [just]  Error: status.html has no content" >&2; \
+		return 4; \
+	fi
 	@echo " [just]  Copy status.html to gh-pages"
 	cp status.html gh-pages/index.html
 	
