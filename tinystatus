@@ -103,6 +103,7 @@ cat << EOF
 <h1>Services</h1>
 <ul>
 EOF
+(
 for file in "${TMP_DIR}/"*.ko; do
     [ -e "${file}" ] || continue
     echo "<li>$(cat "${file}") <span class='small failed'>($(cat "${file}.info"))</span><span class='status failed'>Disrupted</span></li>"
@@ -111,6 +112,7 @@ for file in "${TMP_DIR}/"*.ok; do
     [ -e "${file}" ] || continue
     echo "<li>$(cat "${file}") <span class='status success'>Operational</span></li>"
 done
+) | sort
 cat << EOF
 </ul>
 <p class=small> Last check: $(date +%FT%T%z)</p>
